@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>demo</title>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <style>
+            .text-focus-in
+            {-webkit-animation:text-focus-in 5s steps(10,end) infinite alternate both;
+            animation:text-focus-in 5s steps(10,end) infinite alternate both;
+                 margin-left:500px;
+                 margin-top:250px;
+                 font-size:50px;
+                 color:black;
+            }
+            @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);
+        filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);
+        opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);
+       filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);
+      filter:blur(0);opacity:1};
+    }
+    @keyframes text-focus-in
+    {
+        0%{-webkit-filter:blur(12px)};
+        100%{-webkit-filter:blur(0);filter:blur(0)};
+    }
+        </style>
+    </head>
+    <body>
+<div class="text-focus-in">SUMAJA</div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>shake animation</title>
+        <style type="text/css">
+           .box{
+            background-color: red;
+            margin:50px;
+            width:120px;
+            height:110px;
+            position:relative;
+            left:0;
+            animation:shakeit 10s linear 0s infinite alternate;
+        }
+            /* standard syntax*/
+            @keyframes shakeit{
+            12.5%{left:-50px;background-color:blueviolet;}
+            25%{left:50px;background-color:cyan;}
+            37.5%{left:-25px;background-color:green;}
+            50%{left:25px;background-color:black;}
+            62.5%{left:-10px;background-color:purple;}
+            75%{left:10px;background-color:red;}
+            }
+        </style>
+    </head>
+    <body>
+        <p><strong>note:</strong>click the"show output"button to repeat the animation</p>
+        <div class="box"></div>
+    </body>
+</html>
